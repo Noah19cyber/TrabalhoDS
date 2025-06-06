@@ -1,0 +1,11 @@
+{
+    "name": "app-ajuda",
+    "version": "1.0.0",
+    "scripts": {
+        "lint": "eslint .",
+        "build": "echo 'Build simulado concluído'"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.1"
+    }
+}
