@@ -21,7 +21,12 @@ jobs:
           node-version: '18'
 
       - name: Instalar dependências
-        run: npm install
+        run: |
+          npm install
+          npx eslint --version
+
+      - name: Ensure ESLint is Executable
+        run: chmod +x ./node_modules/.bin/eslint
 
       - name: Rodar Lint
         run: npm run lint
